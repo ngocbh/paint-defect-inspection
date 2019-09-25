@@ -1,0 +1,196 @@
+@media (min-width: 992px){
+    .typo-line{
+        padding-left: 140px;
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+    .typo-line .category{
+        transform: translateY(-50%);
+        top: 50%;
+        left: 0px;
+        position: absolute;
+    }
+}
+
+.all-icons [class*="pe-"]{
+    font-size: 40px;
+}
+.all-icons input{
+    border: 0;
+}
+.all-icons .font-icon-detail{
+    text-align: center;
+    padding: 45px 0px 30px;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    margin: 15px 0;
+}
+.all-icons .font-icon-detail input{
+    margin: 25px auto 0;
+    width: 100%;
+    text-align: center;
+    display: block;
+    color: #aaa;
+    font-size: 13px;
+}
+
+#map{
+    position:relative;
+    width:100%;
+    height: calc(100% - 60px);
+}
+
+.places-buttons .btn{
+    margin-bottom: 30px
+}
+.sidebar .nav > li.active-pro{
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+}
+.sidebar .nav > li.active-pro a{
+    background: rgba(255, 255, 255, 0.14);
+    opacity: 1;
+    color: #FFFFFF;
+}
+
+.table-upgrade td:nth-child(2),
+.table-upgrade td:nth-child(3){
+    text-align: center;
+}
+
+@media all and (max-width: 991px)  {
+    .sidebar .nav > li.active-pro{
+        position: initial;
+    }
+}
+
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 51px;
+  height: 51px;
+  margin: 6px;
+  border: 6px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #000 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*Slideshow*/
+
+/*Time for the CSS*/
+* {margin: 0; padding: 0;}
+body {background: #ccc;}
+
+.slider{
+  width: 500px; /*Same as width of the large image*/
+  position: relative;
+  /*Instead of height we will use padding*/
+  /*height: 500px;*/
+  /*That helps bring the labels down*/
+  /*padding-top: 500px; */
+  margin: 0px auto;
+  
+  /*Lets add a shadow*/
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+.padcol{
+  padding-left:500px;
+}
+
+.padrow{
+  padding-top:75px;
+}
+
+
+/*Last thing remaining is to add transitions*/
+.slider>img{
+  position: absolute;
+  left: 0; top: 0;
+  transition: all 0.5s;
+}
+
+.slider input[name='slide_switch'] {
+  display: none;
+}
+
+.slider label {
+  /*Lets add some spacing for the thumbnails*/
+  margin: 18px 0 0 18px;
+  /*border: 3px solid #999;*/
+  
+  float: left;
+  cursor: pointer;
+  transition: all 0.5s;
+  
+  /*Default style = low opacity*/
+  opacity: 0.6;
+}
+
+.slider label img{
+  display: block;
+}
+
+/*Time to add the click effects*/
+.slider input[name='slide_switch']:checked+label {
+  border-color: #666;
+  opacity: 1;
+}
+/*Clicking any thumbnail now should change its opacity(style)*/
+/*Time to work on the main images*/
+.slider input[name='slide_switch'] ~ img {
+  opacity: 0;
+  transform: scale(1.1);
+}
+/*That hides all main images at a 110% size
+On click the images will be displayed at normal size to complete the effect
+*/
+.slider input[name='slide_switch']:checked+label+img {
+  opacity: 1;
+  transform: scale(1);
+}
+/*Clicking on any thumbnail now should activate the image related to it*/
+
+/*We are done :)*/
+
+
+.rrow
+{
+    display: table;
+    width: 30%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+    border-spacing: 10px; /*Optional*/
+}
+.ccol
+{
+    display: table-cell;
+    /*background-color: red; /*Optional*/*/
+}

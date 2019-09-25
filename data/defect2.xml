@@ -1,0 +1,38 @@
+<annotation>
+	<folder>Defects</folder>
+	<filename>Rsidedefect.jpg</filename>
+	<path>C:\Users\phantrinh\Pictures\Saved Pictures\Test-dirt-data\Car_pics\Defects\Rsidedefect.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4032</width>
+		<height>3024</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>defect</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2010</xmin>
+			<ymin>1127</ymin>
+			<xmax>2198</xmax>
+			<ymax>1271</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>defect</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2246</xmin>
+			<ymin>5</ymin>
+			<xmax>2347</xmax>
+			<ymax>248</ymax>
+		</bndbox>
+	</object>
+</annotation>
